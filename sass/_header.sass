@@ -1,0 +1,111 @@
+.header
+    padding-top: 16px
+    &__block, &__left, &__right
+        display: flex
+        align-items: center
+        justify-content: space-between
+        z-index: 100
+    &__logo
+        height: 60px
+    &__bottom
+        padding-top: 10px
+    &__media
+        display: none
+.menu
+    &__item
+        font-weight: 600
+        font-size: 1.15rem
+        line-height: 1.38rem
+        color: $black
+        margin-right: 1.54rem
+    &-media
+        display: flex
+        flex-direction: column
+        span
+            width: 46px
+            height: 3px
+            background-color: $gray
+            border-radius: 100px
+            transition: all .3s
+            &:not(:last-child)
+                margin-bottom: 9px
+        &--active
+            span
+                background-color: #fff
+                &:nth-child(2)
+                    display: none
+                &:first-child
+                    transform: rotate(45deg)
+                &:last-child
+                    transform: rotate(-45deg)
+                    margin-top: -11px
+    &-open
+        display: flex
+        flex-direction: column
+        align-items: center
+        position: absolute
+        left: 0
+        right: 0
+        top: -100%
+        padding: 40px
+        padding-top: 100px
+        background-color: $orange
+        transition: all .8s
+        &--active
+            top: 0
+        .menu
+            &__item
+                display: block
+                margin: 0
+                text-align: center
+                margin-bottom: 10px
+        .login
+            margin: 0
+            margin-bottom: 16px
+        .phone
+            color: $black
+            margin-top: 30px
+            margin-bottom: 16px
+.phone
+    font-weight: 700
+    font-size: 2rem
+    line-height: 2.46rem
+    text-transform: uppercase
+    color: $orange
+    margin-left: 1.54rem
+.login
+    font-weight: 700
+    font-size: 1.23rem
+    line-height: 2.15rem
+    color: $light-gray
+    margin-right: 2.31rem
+.btn 
+    padding: 8px 24px 
+    border-radius: 8px
+    background-color: $orange
+    color: $black
+    font-weight: 700
+    font-size: 1.23rem
+    line-height: 2.15rem
+    span
+        font-weight: inherit
+        font-size: inherit
+        line-height: inherit
+    &--white
+        background-color: #fff
+        color: $black
+@media screen and (max-width: 768px) 
+    .header
+        &__bottom, &__top
+            display: none
+        &__media
+            display: flex
+            .menu-media
+                margin-left: 1.23rem
+            .phone
+                margin-right: 1.23rem
+@media screen and (max-width: 590px) 
+    .header
+        &__media > .header__right
+            .phone, .btn
+                display: none
