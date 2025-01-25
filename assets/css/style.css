@@ -304,6 +304,8 @@ a {
 .banners {
   margin-top: 40px;
   position: relative;
+}
+.banners--active {
   z-index: -1;
 }
 
