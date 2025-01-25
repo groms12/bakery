@@ -1,0 +1,88 @@
+.btn 
+    padding: 8px 24px 
+    border-radius: 8px
+    background-color: $orange
+    border: 2px solid $orange
+    color: $black
+    font-weight: 700
+    font-size: 1.23rem
+    line-height: 2.15rem
+    font-family: 'Montserrat', sans-serif
+    span
+        font-weight: inherit
+        font-size: inherit
+        line-height: inherit
+    &--white
+        background-color: #fff
+        color: $black
+.card
+    &__img
+        position: relative
+        &--bg
+            width: 100%
+            object-fit: contain
+    &__tag
+        position: absolute
+        top: 20px
+        right: 10px
+        background-color: #DC0D13
+        padding: 4px 12px
+        color: #fff
+        border-radius: 100px
+    &__title
+        font-weight: 800
+        font-size: 24px
+        line-height: 28px
+        color: #797979
+        margin-top: 8px
+        margin-bottom: 14px
+        overflow: hidden
+        display: -webkit-box
+        -webkit-line-clamp: 2
+                line-clamp: 2
+        -webkit-box-orient: vertical
+    &__desc
+        color: #686466
+        margin-bottom: 24px
+        overflow: hidden
+        display: -webkit-box
+        -webkit-line-clamp: 4
+                line-clamp: 4
+        -webkit-box-orient: vertical
+    &__cost
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__price
+        font-weight: 700
+        font-size: 22px
+        line-height: 19px
+        color: #231F20
+.title
+    font-weight: 800
+    font-size: 32px
+    line-height: 39px
+    color: $orange
+
+@media screen and (max-width: 810px) 
+    .card
+        &__title, &__price
+            font-size: 18px
+            line-height: 20px
+    .btn
+        font-size: 13px
+@media screen and (max-width: 500px) 
+    .card
+        &__cost
+            flex-direction: column
+            .btn
+                width: 100%
+                margin-top: 12px
+        &__desc
+            margin-bottom: 18px
+
+
+
+
+
+
