@@ -63,7 +63,42 @@
     font-size: 32px
     line-height: 39px
     color: $orange
-
+.slider
+    &-next
+        right: -60px
+    &-prev
+        left: -60px
+        transform: rotate(180deg)
+    &__arrow
+        cursor: pointer
+        position: absolute
+        top: 0
+        bottom: 0
+        margin: auto
+        padding: 18px 18px
+        padding-left: 19px
+        padding-right: 17px
+        max-width: 30px 
+        max-height: 30px
+        border-radius: 50%
+        background-color: $orange
+        display: flex
+        align-items: center
+        justify-content: center
+        z-index: 100
+.swiper
+    &__img
+        border-radius: 12px
+        width: 100%
+        object-fit: contain
+.swiper-container
+    overflow: hidden
+    padding-bottom: 30px
+.swiper-pagination-bullet-active
+    background-color: $orange !important
+@media screen and (max-width: 1230px) 
+    .slider__arrows
+        display: none
 @media screen and (max-width: 810px) 
     .card
         &__title, &__price
