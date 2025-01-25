@@ -173,9 +173,11 @@ a {
 
 .card__img {
   position: relative;
+  width: 100%;
 }
 .card__img--bg {
   width: 100%;
+  max-height: 265px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -309,6 +311,9 @@ a {
   z-index: -1;
 }
 
+.products-block {
+  margin-bottom: 80px;
+}
 .products__items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -394,6 +399,7 @@ a {
 @media screen and (max-width: 550px) {
   .delivery-info__text {
     font-size: 12px;
+    line-height: 16px;
   }
   .delivery-info__img img {
     width: 32px;
