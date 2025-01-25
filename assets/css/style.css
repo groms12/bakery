@@ -96,7 +96,7 @@ a {
   transition: all 0.8s;
 }
 .menu-open--active {
-  top: 0;
+  top: -20px;
 }
 .menu-open .menu__item {
   display: block;
@@ -303,6 +303,8 @@ a {
 
 .banners {
   margin-top: 40px;
+  position: relative;
+  z-index: -1;
 }
 
 .products__items {
@@ -326,7 +328,7 @@ a {
   }
 }
 .footer {
-  padding: 55px 0 120px;
+  padding: 120px 0 60px;
 }
 .footer__content {
   display: flex;
