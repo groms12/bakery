@@ -180,7 +180,7 @@ a {
 }
 .card__img--bg {
   width: 100%;
-  max-height: 265px;
+  height: 265px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -297,7 +297,15 @@ a {
     font-size: 13px;
   }
 }
+@media screen and (max-width: 550px) {
+  .card__img img {
+    height: 200px;
+  }
+}
 @media screen and (max-width: 500px) {
+  .card__img img {
+    height: 160px;
+  }
   .card__cost {
     flex-direction: column;
   }
