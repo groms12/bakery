@@ -171,6 +171,9 @@ a {
   color: #0E0C0D;
 }
 
+.card {
+  cursor: pointer;
+}
 .card__img {
   position: relative;
   width: 100%;
@@ -379,6 +382,7 @@ a {
   .modal-product {
     max-width: 90%;
     padding: 10px;
+    border-radius: 12px;
   }
   .modal-product__close {
     width: 20px;
