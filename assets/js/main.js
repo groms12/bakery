@@ -3,7 +3,15 @@ $('.menu-media').click(function() {
     $('.menu-open').toggleClass('menu-open--active');
     $('.banners').toggleClass('banners--active');
 });
-
+$('.list-item').click(function() {
+    $(this).toggleClass('list-item--active');
+});
+$('.card').click(function() {
+    $('.modal-product').toggleClass('modal-product--active');
+});
+$('.modal-product__close').click(function() {
+    $('.modal-product').toggleClass('modal-product--active');
+});
 const swiper = new Swiper('.swiper-container', {
     loop: true,
     pagination: {

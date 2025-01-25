@@ -299,6 +299,119 @@ a {
     margin-bottom: 18px;
   }
 }
+.modal-product {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 500px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 32px;
+  z-index: 100;
+  display: none;
+  box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.08), 0px 4px 28px rgba(0, 0, 0, 0.08);
+}
+.modal-product--active {
+  display: block;
+}
+.modal-product__img img {
+  display: block;
+  margin: auto;
+}
+.modal-product__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+.modal-product__btn {
+  width: 100%;
+}
+.modal-product__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.modal-product__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+  color: #0E0C0D;
+}
+.modal-product__text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #686466;
+  margin-bottom: 10px;
+}
+
+.list-item {
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #E2E2E9;
+}
+.list-item__title {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 14px;
+}
+.list-item__price {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FF9500;
+  margin-top: 10px;
+}
+.list-item--active {
+  border: 1px solid #FF9500;
+}
+
+@media screen and (max-width: 550px) {
+  .modal-product {
+    max-width: 90%;
+    padding: 10px;
+  }
+  .modal-product__close {
+    width: 20px;
+    top: 14px;
+    right: 14px;
+  }
+  .modal-product__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .modal-product__title {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .modal-product__text {
+    font-size: 12px;
+  }
+  .list-item {
+    padding: 8px;
+  }
+  .modal-product__img img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .modal-product {
+    max-width: 90%;
+  }
+  .modal-product__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .main__products {
   margin-top: 80px;
 }
