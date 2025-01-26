@@ -8,6 +8,7 @@
     font-size: 1.23rem
     line-height: 2.15rem
     font-family: 'Montserrat', sans-serif
+    transition: all 0.3s
     span
         font-weight: inherit
         font-size: inherit
@@ -15,6 +16,8 @@
     &--white
         background-color: #fff
         color: $black
+    &:hover
+        background-color: #fff
 .card
     cursor: pointer
     &__img
@@ -66,7 +69,12 @@
     font-size: 32px
     line-height: 39px
     color: $orange
-.slider
+.title-small    
+    font-weight: 600
+    font-size: 24px
+    line-height: 28px
+    color: $orange
+.slider, .basket-slider
     &-next
         right: -60px
     &-prev
@@ -75,7 +83,7 @@
     &__arrow
         cursor: pointer
         position: absolute
-        top: 0
+        top: -15px
         bottom: 0
         margin: auto
         padding: 18px 18px

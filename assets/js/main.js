@@ -6,13 +6,16 @@ $('.menu-media').click(function() {
 $('.list-item').click(function() {
     $(this).toggleClass('list-item--active');
 });
+$('.basket-slide').click(function() {
+    $(this).toggleClass('basket-slide--active');
+});
 $('.card').click(function() {
     $('.modal-product').toggleClass('modal-product--active');
 });
 $('.modal-product__close').click(function() {
     $('.modal-product').toggleClass('modal-product--active');
 });
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.banners-slider', {
     loop: true,
     pagination: {
         el: '.swiper-pagination',
@@ -36,6 +39,30 @@ const swiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.slider-next',
                 prevEl: '.slider-prev',
+            },
+        }
+    }
+});
+const swiper1 = new Swiper('.basket-slider', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        450: {
+            slidesPerView: 2,
+            spaceBetween: 10
+        },
+        700: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.basket-slider-next',
+                prevEl: '.basket-slider-prev',
             },
         }
     }

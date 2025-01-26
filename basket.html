@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__block header__media">
+                <a href="main.html" class="header__left">
+                    <img src="assets/img/svg/logo.svg" alt="" class="header__logo">
+                </a>
+                <div class="header__right">
+                    <a href="tel:84993918449" class="phone">8 499 391-84-49</a>
+                    <a href="basket.html" class="btn"><span>Корзина</span> | <span>4</span></a>
+                    <div class="menu-media">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="menu-open">
+                    <div class="menu">
+                        <a href="#pizza" class="menu__item">Пицца</a>
+                        <a href="#pasta" class="menu__item">Паста</a>
+                        <a href="#soap" class="menu__item">Супы</a>
+                        <a href="#salad" class="menu__item">Салаты</a>
+                        <a href="#warm" class="menu__item">Горячее</a>
+                    </div>
+                    <a href="tel:84993918449" class="phone">8 499 391-84-49</a>
+                    <a href="" class="link login">Войти</a>
+                    <a href="basket.html" class="btn btn--white"><span>Корзина</span> | <span>4</span></a>
+                </div>
+            </div>
+            <div class="header__top header__block">
+                <a href="main.html" class="header__left">
+                    <img src="assets/img/svg/logo.svg" alt="" class="header__logo">
+                </a>
+                <div class="header__right">
+                    <div class="header__menu menu">
+                        <a href="" class="menu__item">О нас</a>
+                        <a href="" class="menu__item">Контакты</a>
+                    </div>
+                    <a href="tel:84993918449" class="phone">8 499 391-84-49</a>
+                </div>
+            </div>
+            <div class="header__bottom header__block">
+                <div class="header__left">
+                    <div class="header__menu menu">
+                        <a href="#pizza" class="menu__item">Пицца</a>
+                        <a href="#pasta" class="menu__item">Паста</a>
+                        <a href="#soap" class="menu__item">Супы</a>
+                        <a href="#salad" class="menu__item">Салаты</a>
+                        <a href="#warm" class="menu__item">Горячее</a>
+                    </div>
+                </div>
+                <div class="header__right">
+                    <a href="" class="link login">Войти</a>
+                    <a href="basket.html" class="btn"><span>Корзина</span> | <span>4</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="basket">
+        <section class="added">
+            <div class="container-2">
+                <h2 class="title basket__title">Корзина</h2>
+                <div class="basket__items">
+                    <div class="basket__item basket-product">
+                        <div class="basket-product__block">
+                            <div class="basket-product__img"><img src="assets/img/menu/image-1.png" alt=""></div>
+                            <div class="basket-product__info">
+                                <h3 class="basket-product__title">С креветками и трюфелями</h3>
+                                <p class="basket-product__desc">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г</p>
+                            </div>
+                        </div>
+                        <div class="basket-product__block-2">
+                            <p class="basket-product__price">120 ₽</p>
+                            <p class="basket-product__count">
+                                <span>-</span><span>1</span><span>+</span>
+                            </p>
+                            <div class="basket-product__delete">х</div>
+                        </div>
+                    </div>
+                    <div class="basket__item basket-product">
+                        <div class="basket-product__block">
+                            <div class="basket-product__img"><img src="assets/img/menu/image-5.png" alt=""></div>
+                            <div class="basket-product__info">
+                                <h3 class="basket-product__title">С креветками и трюфелями</h3>
+                                <p class="basket-product__desc">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г</p>
+                            </div>
+                        </div>
+                        <div class="basket-product__block-2">
+                            <p class="basket-product__price">120 ₽</p>
+                            <p class="basket-product__count">
+                                <span>-</span><span>1</span><span>+</span>
+                            </p>
+                            <div class="basket-product__delete">х</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="add-more">
+            <div class="container-2">
+                <h3 class="title-small add-more__title">Добавить к заказу?</h3>
+                <div class="add-more__slider">
+                    <div class="slider__arrows">
+                        <div class="basket-slider-next slider__arrow"><img src="assets/img/svg/arrow-right.svg" alt=""></div>
+                        <div class="basket-slider-prev slider__arrow"><img src="assets/img/svg/arrow-right.svg" alt=""></div>
+                    </div>
+                    <div class="swiper-container basket-slider">
+                        <div class="swiper-wrapper">
+                            <div class="basket-slide swiper-slide">
+                                <div class="basket-slide__img"><img src="assets/img/menu/image-5.png" alt=""></div>
+                                <div class="basket-slide__info">
+                                    <p class="basket-slide__title">Молочный коктель с приятным ароматом клубники</p>
+                                    <p class="basket-slide__price">от 120 ₽</p>
+                                </div>
+                            </div>
+                            <div class="basket-slide swiper-slide basket-slide--active">
+                                <div class="basket-slide__img"><img src="assets/img/menu/image-5.png" alt=""></div>
+                                <div class="basket-slide__info">
+                                    <p class="basket-slide__title">Молочный коктель с приятным ароматом клубники</p>
+                                    <p class="basket-slide__price">от 120 ₽</p>
+                                </div>
+                            </div>
+                            <div class="basket-slide swiper-slide">
+                                <div class="basket-slide__img"><img src="assets/img/menu/image-5.png" alt=""></div>
+                                <div class="basket-slide__info">
+                                    <p class="basket-slide__title">Молочный коктель с приятным ароматом клубники</p>
+                                    <p class="basket-slide__price">от 120 ₽</p>
+                                </div>
+                            </div>
+                            <div class="basket-slide swiper-slide">
+                                <div class="basket-slide__img"><img src="assets/img/menu/image-5.png" alt=""></div>
+                                <div class="basket-slide__info">
+                                    <p class="basket-slide__title">Молочный коктель с приятным ароматом клубники</p>
+                                    <p class="basket-slide__price">от 120 ₽</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sauces">
+            <div class="container-2">
+                <h3 class="title-small add-more__title">Соусы к бортикам и закускам</h3>
+                <div class="sauces__list">
+                    <div class="sauces__list-item list-item list-item--active">
+                        <img src="assets/img/sauces/sauce-1.png" alt="">
+                        <p class="list-item__title">Сырный соус</p>
+                        <p class="list-item__price">от 120 ₽</p>
+                    </div>
+                    <div class="sauces__list-item list-item">
+                        <img src="assets/img/sauces/sauce-2.png" alt="">
+                        <p class="list-item__title">Барбекю</p>
+                        <p class="list-item__price">от 120 ₽</p>
+                    </div>
+                    <div class="sauces__list-item list-item">
+                        <img src="assets/img/sauces/sauce-3.png" alt="">
+                        <p class="list-item__title">Ранч</p>
+                        <p class="list-item__price">от 120 ₽</p>
+                    </div>
+                    <div class="sauces__list-item list-item">
+                        <img src="assets/img/sauces/sauce-4.png" alt="">
+                        <p class="list-item__title">Сгущенка</p>
+                        <p class="list-item__price">от 120 ₽</p>
+                    </div>
+                    <div class="sauces__list-item list-item">
+                        <img src="assets/img/sauces/sauce-2.png" alt="">
+                        <p class="list-item__title">Малиновое варенье</p>
+                        <p class="list-item__price">от 120 ₽</p>
+                    </div>
+                    <div class="sauces__list-item list-item">
+                        <img src="assets/img/sauces/sauce-4.png" alt="">
+                        <p class="list-item__title">Острый соус</p>
+                        <p class="list-item__price">от 120 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="summary">
+            <div class="container-2">
+                <h3 class="title-small summary__title">Промокод</h3>
+                <div class="summary__payment">
+                    <form action="#" class="summary__form">
+                        <input type="text" placeholder="Введите промокод">
+                        <input type="submit" value="Применить" class="btn">
+                    </form>
+                    <div class="summary__cost">
+                        <span>Сумма заказа:</span>
+                        <span class="cost">1 048 ₽</span>
+                    </div>
+                </div>
+                <div class="summary__buttons">
+                    <a href="main.html" class="summary__link">
+                        < Вернуться в магазин</a>
+                            <button class="btn">Оформить заказ ></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__left">
+                    <img src="assets/img/svg/logo.svg" alt="" class="header__logo">
+                    <div class="footer__address">Москва ул. Проспект Вернадского 86В</div>
+                    <a href="tel:84993918449" class="phone">8 499 391-84-49</a>
+                </div>
+                <div class="footer__right">
+                    <p class="footer__text">Остались вопросы? А мы всегда на связи:</p>
+                    <div class="social">
+                        <a href="#" class="social__link"><img src="assets/img/svg/vksvg.svg" alt=""></a>
+                        <a href="#" class="social__link"><img src="assets/img/svg/telegram.svg" alt=""></a>
+                    </div>
+                    <p class="copyright footer__text">YaBao Все права защищены © 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
