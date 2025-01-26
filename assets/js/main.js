@@ -11,9 +11,11 @@ $('.basket-slide').click(function() {
 });
 $('.card').click(function() {
     $('.modal-product').toggleClass('modal-product--active');
+    $('body').toggleClass('body--modal');
 });
 $('.modal-product__close').click(function() {
     $('.modal-product').toggleClass('modal-product--active');
+    $('body').toggleClass('body--modal');
 });
 const swiper = new Swiper('.banners-slider', {
     loop: true,
