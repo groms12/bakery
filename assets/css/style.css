@@ -1055,6 +1055,7 @@ body {
   }
   .personal__inp {
     width: 180px;
+    padding: 10px;
   }
   .order {
     padding: 12px;
