@@ -10,13 +10,19 @@ $('.basket-slide').click(function() {
     $(this).toggleClass('basket-slide--active');
 });
 $('.card').click(function() {
-    $('.modal-product').toggleClass('modal-product--active');
+    $('.modal-product').toggleClass('modal--active');
     $('body').toggleClass('body--modal');
 });
-$('.modal-product__close').click(function() {
-    $('.modal-product').toggleClass('modal-product--active');
+$('.login').click(function(e) {
+    e.preventDefault();
+    $('.modal-login').toggleClass('modal--active');
     $('body').toggleClass('body--modal');
 });
+$('.modal__close').click(function() {
+    $(this).parent('.modal').toggleClass('modal--active');
+    $('body').toggleClass('body--modal');
+});
+$('.login__phone').mask('+7 (999) 999-99-99');
 const swiper = new Swiper('.banners-slider', {
     loop: true,
     pagination: {
