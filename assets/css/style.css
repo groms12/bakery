@@ -918,6 +918,159 @@ body {
     grid-column-gap: 10px;
   }
 }
+.cabinet section {
+  margin: 40px 0 60px;
+}
+.cabinet .title {
+  margin-bottom: 24px;
+}
+
+.bonus {
+  background-color: #E3ECF5;
+  padding: 40px 0;
+  padding-top: 32px;
+}
+.bonus__list {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  grid-gap: 20px;
+  overflow-x: auto;
+}
+.bonus__item {
+  background-color: #fff;
+  padding: 32px;
+  text-align: center;
+  border-radius: 8px;
+  flex-basis: 20%;
+}
+.bonus__item img {
+  margin-bottom: 24px;
+}
+
+.order {
+  padding: 24px;
+  padding-top: 12px;
+  background-color: rgba(36, 43, 69, 0.03);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.order__link {
+  color: #579B11;
+}
+.order__block {
+  padding-bottom: 12px;
+  padding-top: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.order__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order__info:last-child {
+  margin-top: 10px;
+}
+.order .status {
+  display: flex;
+  align-items: center;
+}
+.order .status__color {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #579B11;
+  margin-right: 6px;
+  display: block;
+}
+.order__number {
+  margin-right: 12px;
+  font-size: 18px;
+}
+.order__date {
+  color: rgba(36, 43, 69, 0.6);
+  font-size: 16px;
+}
+.order__cost {
+  font-size: 18px;
+  font-weight: 600;
+}
+.order__delivery, .order__count {
+  color: rgba(36, 43, 69, 0.6);
+  margin-bottom: 8px;
+  display: block;
+}
+.order__address {
+  font-size: 18px;
+}
+.order-products__list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  grid-gap: 8px;
+  overflow-x: auto;
+}
+.order-products__item {
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-products__item img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.personal .btn {
+  margin-top: 20px;
+}
+.personal__change {
+  cursor: pointer;
+  color: #FF9500;
+}
+.personal__input {
+  margin-bottom: 16px;
+}
+.personal__inp {
+  padding: 10px 20px;
+  width: 300px;
+  border-radius: 8px;
+  border: 2px solid #E2E2E9;
+  margin-top: 4px;
+  margin-right: 12px;
+}
+.personal__inp:focus {
+  outline: none;
+  border: 2px solid #FF9500;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 550px) {
+  .cabinet .title {
+    font-size: 24px;
+  }
+  .personal__inp {
+    width: 180px;
+  }
+  .order {
+    padding: 12px;
+    padding-top: 0px;
+  }
+  .order__number, .order__address {
+    font-size: 16px;
+  }
+  .order__date {
+    font-size: 14px;
+  }
+  .order-products__item img {
+    width: 40px;
+    height: 40px;
+  }
+}
 .footer {
   padding: 120px 0 60px;
 }

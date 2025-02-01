@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="modal-login modal">
+        <img src="assets/img/svg/close.svg" alt="" class="modal__close">
+        <div class="modal__content">
+            <h2 class="title">Вход на сайт</h2>
+            <form action="#" class="login__form">
+                <div class="login__block">
+                    <p class="login__text">Номер телефона</p>
+                    <input class="login__phone" type="tel" name="phone" id="phone" placeholder="+7 999 999-99-99">
+                </div>
+                <div class="login__block">
+                    <input type="submit" value="Выслать код" class="btn">
+                    <p class="login__text">Продолжая, вы соглашаетесь <a href="#"> со сбором и обработкой персональных данных и пользовательским соглашением</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__block header__media">
+                <a href="main.html" class="header__left">
+                    <img src="assets/img/svg/logo.svg" alt="" class="header__logo">
+                </a>
+                <div class="header__right">
+                    <a href="tel:84993918449" class="phone">8 499 391-84-49</a>
+                    <a href="basket.html" class="btn"><span>Корзина</span> | <span>4</span></a>
+                    <div class="menu-media">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="menu-open">
+                    <div class="menu">
+                        <a href="#pizza" class="menu__item">Пицца</a>
+                        <a href="#pasta" class="menu__item">Паста</a>
+                        <a href="#soap" class="menu__item">Супы</a>
+                        <a href="#salad" class="menu__item">Салаты</a>
+                        <a href="#warm" class="menu__item">Горячее</a>
+                    </div>
+                    <a href="tel:84993918449" class="phone">8 499 391-84-49</a>
+                    <a href="" class="link login">Войти</a>
+                    <a href="basket.html" class="btn btn--white"><span>Корзина</span> | <span>4</span></a>
+                </div>
+            </div>
+            <div class="header__top header__block">
+                <a href="main.html" class="header__left">
+                    <img src="assets/img/svg/logo.svg" alt="" class="header__logo">
+                </a>
+                <div class="header__right">
+                    <div class="header__menu menu">
+                        <a href="" class="menu__item">О нас</a>
+                        <a href="" class="menu__item">Контакты</a>
+                    </div>
+                    <a href="tel:84993918449" class="phone">8 499 391-84-49</a>
+                </div>
+            </div>
+            <div class="header__bottom header__block">
+                <div class="header__left">
+                    <div class="header__menu menu">
+                        <a href="#pizza" class="menu__item">Пицца</a>
+                        <a href="#pasta" class="menu__item">Паста</a>
+                        <a href="#soap" class="menu__item">Супы</a>
+                        <a href="#salad" class="menu__item">Салаты</a>
+                        <a href="#warm" class="menu__item">Горячее</a>
+                    </div>
+                </div>
+                <div class="header__right">
+                    <!-- <a href="" class="link login">Войти</a> -->
+                    <a href="basket.html" class="btn"><span>Корзина</span> | <span>4</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="cabinet">
+        <section class="bonus">
+            <div class="container">
+                <h2 class="title">Мои бонусы</h2>
+                <div class="bonus__list">
+                    <div class="bonus__item">
+                        <img src="assets/img/banners/sale.png" alt="">
+                        <p>Бонусы появятся здесь после заказа</p>
+                    </div>
+                    <div class="bonus__item">
+                        <img src="assets/img/banners/sale.png" alt="">
+                        <p>Бонусы появятся здесь после заказа</p>
+                    </div>
+                    <div class="bonus__item">
+                        <img src="assets/img/banners/sale.png" alt="">
+                        <p>Бонусы появятся здесь после заказа</p>
+                    </div>
+                    <div class="bonus__item">
+                        <img src="assets/img/banners/sale.png" alt="">
+                        <p>Бонусы появятся здесь после заказа</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="personal">
+                <h2 class="title">Личные данные</h2>
+                <div class="personal__form">
+                    <div class="personal__input">
+                        <span class="personal__text">Имя</span>
+                        <div class="personal__input">
+                            <input type="text" placeholder="Имя" class="personal__inp">
+                            <span class="personal__change">Изменить</span>
+                        </div>
+                    </div>
+                    <div class="personal__input">
+                        <span class="personal__text">Телефон</span>
+                        <div class="personal__input">
+                            <input type="tel" class="personal__phone personal__inp" placeholder="+7 999 999-99-99">
+                            <span class="personal__change">Изменить</span>
+                        </div>
+                    </div>
+                    <div class="personal__input">
+                        <span class="personal__text">Дата рождения</span>
+                        <div class="personal__input">
+                            <input type="text" placeholder="12.05.2000" class="personal__inp">
+                            <span class="personal__change">Изменить</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Выйти</button>
+            </section>
+            <section class="orders">
+                <h2 class="title">Вы заказывали</h2>
+                <div class="orders__list">
+                    <div class="orders__item order">
+                        <div class="order__block">
+                            <div class="order__info">
+                                <div class="order__status status">
+                                    <span class="status__color"></span>
+                                    <p class="status__text">Доставлен</p>
+                                </div>
+                                <a href="#" class="order__link">Повторить заказ</a>
+                            </div>
+                            <div class="order__info">
+                                <div class="order__info">
+                                    <p class="order__number">№ 45567</p>
+                                    <p class="order__date">8 апреля</p>
+                                </div>
+                                <p class="order__cost">3 650 ₽</p>
+                            </div>
+                        </div>
+                        <div class="order__block">
+                            <span class="order__delivery">Доставка</span>
+                            <p class="order__address">Москва, ул Таганрогская, д 7, 34</p>
+                        </div>
+                        <div class="order__block">
+                            <div class="order__products">
+                                <p class="order__count">5 товаров</p>
+                                <div class="order-products__list">
+                                    <div class="order-products__item"><img src="assets/img/menu/image-1.png" alt=""></div>
+                                    <div class="order-products__item"><img src="assets/img/menu/image-2.png" alt=""></div>
+                                    <div class="order-products__item"><img src="assets/img/menu/image-3.png" alt=""></div>
+                                    <div class="order-products__item"><img src="assets/img/menu/image-4.png" alt=""></div>
+                                    <div class="order-products__item"><img src="assets/img/menu/image-1.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orders__item order">
+                        <div class="order__block">
+                            <div class="order__info">
+                                <div class="order__status status">
+                                    <span class="status__color"></span>
+                                    <p class="status__text">Доставлен</p>
+                                </div>
+                                <a href="#" class="order__link">Повторить заказ</a>
+                            </div>
+                            <div class="order__info">
+                                <div class="order__info">
+                                    <p class="order__number">№ 45567</p>
+                                    <p class="order__date">8 апреля</p>
+                                </div>
+                                <p class="order__cost">3 650 ₽</p>
+                            </div>
+                        </div>
+                        <div class="order__block">
+                            <span class="order__delivery">Доставка</span>
+                            <p class="order__address">Москва, ул Таганрогская, д 7, 34</p>
+                        </div>
+                        <div class="order__block">
+                            <div class="order__products">
+                                <p class="order__count">5 товаров</p>
+                                <div class="order-products__list">
+                                    <div class="order-products__item"><img src="assets/img/menu/image-1.png" alt=""></div>
+                                    <div class="order-products__item"><img src="assets/img/menu/image-2.png" alt=""></div>
+                                    <div class="order-products__item"><img src="assets/img/menu/image-3.png" alt=""></div>
+                                    <div class="order-products__item"><img src="assets/img/menu/image-4.png" alt=""></div>
+                                    <div class="order-products__item"><img src="assets/img/menu/image-1.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__left">
+                    <img src="assets/img/svg/logo.svg" alt="" class="header__logo">
+                    <div class="footer__address">Москва ул. Проспект Вернадского 86В</div>
+                    <a href="tel:84993918449" class="phone">8 499 391-84-49</a>
+                </div>
+                <div class="footer__right">
+                    <p class="footer__text">Остались вопросы? А мы всегда на связи:</p>
+                    <div class="social">
+                        <a href="#" class="social__link"><img src="assets/img/svg/vksvg.svg" alt=""></a>
+                        <a href="#" class="social__link"><img src="assets/img/svg/telegram.svg" alt=""></a>
+                    </div>
+                    <p class="copyright footer__text">YaBao Все права защищены © 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

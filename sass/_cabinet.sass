@@ -1,0 +1,121 @@
+.cabinet
+    section
+        margin: 40px 0 60px
+    .title
+        margin-bottom: 24px
+.bonus
+    background-color: $blue
+    padding: 40px 0
+    padding-top: 32px
+    &__list
+        display: flex
+        align-items: start
+        justify-content: flex-start
+        grid-gap: 20px
+        overflow-x: auto
+    &__item
+        background-color: #fff
+        padding: 32px
+        text-align: center
+        border-radius: 8px
+        flex-basis: 20%
+        img
+            margin-bottom: 24px
+.order
+    padding: 24px
+    padding-top: 12px
+    background-color: rgba(36,43,69,0.03)
+    border-radius: 8px
+    margin-bottom: 12px
+    &__link
+        color: $green
+    &__block
+        padding-bottom: 12px
+        padding-top: 12px
+        border-bottom: 1px solid rgba(0,0,0, 0.2)
+    &__info
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &:last-child
+            margin-top: 10px
+    .status
+        display: flex
+        align-items: center
+        &__color
+            width: 8px
+            height: 8px
+            border-radius: 50%
+            background-color: $green
+            margin-right: 6px
+            display: block
+    &__number
+        margin-right: 12px
+        font-size: 18px
+    &__date
+        color: rgba(36,43,69,0.6)
+        font-size: 16px
+    &__cost
+        font-size: 18px
+        font-weight: 600
+    &__delivery, &__count
+        color: rgba(36,43,69,0.6)
+        margin-bottom: 8px
+        display: block
+    &__address
+        font-size: 18px
+    &-products
+        &__list
+            display: flex
+            align-items: center
+            justify-content: start
+            grid-gap: 8px
+            overflow-x: auto
+        &__item
+            padding: 8px
+            background-color: #fff
+            border-radius: 8px
+            display: flex
+            align-items: center
+            justify-content: center
+            img
+                width: 60px
+                height: 60px
+                object-fit: contain
+.personal
+    .btn
+        margin-top: 20px
+    &__change
+        cursor: pointer
+        color: $orange
+    &__input
+        margin-bottom: 16px
+    &__inp
+        padding: 10px 20px
+        width: 300px
+        border-radius: 8px
+        border: 2px solid #E2E2E9
+        margin-top: 4px
+        margin-right: 12px
+        &:focus
+            outline: none
+            border: 2px solid $orange
+            border-radius: 8px
+@media screen and (max-width: 550px) 
+    .cabinet
+        .title
+            font-size: 24px
+    .personal__inp
+        width: 180px
+    .order
+        padding: 12px
+        padding-top: 0px
+        &__number, &__address
+            font-size: 16px
+        &__date
+            font-size: 14px
+        &-products
+            &__item
+                img
+                    width: 40px
+                    height: 40px
